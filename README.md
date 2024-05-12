@@ -24,7 +24,9 @@ Entrando a otro punto fundamental de git, veremos que son los repositorios.
 Podemos ver a los repositorios como unas carpetas con esteroides xD, ya que guarda los archivos respectivamente, junto a sus cambios e historicos realizados dentro el proyecto.
 
 ![Repo mamada xD](images-readme/repositorio.jpeg)
+
 Psdt. No lo digo yo, asi lo ve la IA xD.
+
 ![PRUEBA](images-readme/Screenshot%202024-05-09%20005651.png)
 
 ## Algunos comandos de Git
