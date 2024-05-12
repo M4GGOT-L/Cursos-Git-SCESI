@@ -11,6 +11,7 @@ He de suponer que se preguntaran sobre la importancia de git o cualquier control
  Git fue creado por Linus Torvalds, el mismo creador del kernel de Linux. Surgió en 2005 como una solución a los problemas que enfrentaba el equipo de desarrollo de Linux al tratar de coordinar y gestionar las diferentes versiones del kernel de manera eficiente.
 
 Antes de Git, el equipo utilizaba un sistema de control de versiones llamado BitKeeper, pero surgieron disputas con la empresa detrás de BitKeeper, lo que llevó a Torvalds a desarrollar su propio sistema. Git se diseñó con un enfoque descentralizado y distribuido, lo que significa que cada usuario tiene una copia completa del historial del proyecto, lo que lo hace robusto y adecuado para proyectos de código abierto y colaborativos. Desde su creación, Git ha crecido enormemente en popularidad y se ha convertido en el estándar de facto para el control de versiones en la industria del desarrollo de software. <span style="color:blue">- ChatGPT (2024)
+
 ![Conchesumare el Linus xdd](images-readme/god.jpeg)
 
 Este conchesumare, asi como lo ven, al ponerle el Bitkeeper de paga, en lugar de buscar otra opcion, decidio aplicar la de:
