@@ -85,7 +85,9 @@ ____
   Para saber que es una rama en especifico, debemos de comprender la forma en la que debemos verla, ya que asumirla como la rama de un arbol es erroneo, ya que estas se dividen pero ya no vuelven a la gitrama principal, en su lugar debemos verlo como una autopista, que se va dividiendo en calles, pero que al final terminaran nuevamente en la autopista. En otros terminos "Una rama en Git es simplemente un apuntador móvil que señala a una confirmación específica en la historia del repositorio."
   Al crear una rama y guardarla con un commit, generamos una bifurcacion de la rama principal (main), usando la analogia de la autopista, creamos una nueva calle que sale de la avenida.
   Pero...En que nos beneficia el uso de estas dichosas ramas?
-  ![bobdudando](images-readme/bobtoronja.jpeg)   
+  
+  ![bobdudando](images-readme/bobtoronja.jpeg) 
+  
   Pues son utiles para un trabajo remoto...un trabajo en paralelo, donde un grupo de personas pueden trabajar sobre un proyecto al mismo tiempo. Y aqui entra el otro punto, que permite un desarrollo no lineal, en otras palabras que no afecta al proyecto principal o a la rama (main). Aclarar que el nombre de una rama debe especificar lo que se esta haciendo en esa rama (Si haces un login o un history, debes nombrar a la rama de la misma manera.)
   
  ## Algunos comandos de las ramas
@@ -153,7 +155,8 @@ Ahora, teniendo ya un repositorio remoto en github, fusionaremos nuestro reposit
 - 
   La direccion SSH, se obtiene directamente del repositorio remoto, al presionar en code 
 
-![githubexample](images-readme/Screenshot%202024-05-11%20210232.png) 
+![githubexample](images-readme/Screenshot%202024-05-11%20210232.png)  
+
 para luego ir a SSH, donde podemos copiar el codigo SSH y usarlo en este comando.
 Nos tendria que salir algo similar a esto git@github.com:midudev/my-awesome-new-repo.git, donde todo en conjunto nos quedaria de la siguiente manera 
 - git remote add origin git@github.com:midudev/my-awesome-new-repo.git
