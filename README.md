@@ -84,8 +84,8 @@ ____
 ### 1.1.- Ramas
   Para saber que es una rama en especifico, debemos de comprender la forma en la que debemos verla, ya que asumirla como la rama de un arbol es erroneo, ya que estas se dividen pero ya no vuelven a la gitrama principal, en su lugar debemos verlo como una autopista, que se va dividiendo en calles, pero que al final terminaran nuevamente en la autopista. En otros terminos "Una rama en Git es simplemente un apuntador móvil que señala a una confirmación específica en la historia del repositorio."
   Al crear una rama y guardarla con un commit, generamos una bifurcacion de la rama principal (main), usando la analogia de la autopista, creamos una nueva calle que sale de la avenida.
-  Pero...En que nos beneficia el uso de estas dichosas ramas? ![bobdudando](images-readme/bobtoronja.jpeg)  
-  
+  Pero...En que nos beneficia el uso de estas dichosas ramas?
+  ![bobdudando](images-readme/bobtoronja.jpeg)   
   Pues son utiles para un trabajo remoto...un trabajo en paralelo, donde un grupo de personas pueden trabajar sobre un proyecto al mismo tiempo. Y aqui entra el otro punto, que permite un desarrollo no lineal, en otras palabras que no afecta al proyecto principal o a la rama (main). Aclarar que el nombre de una rama debe especificar lo que se esta haciendo en esa rama (Si haces un login o un history, debes nombrar a la rama de la misma manera.)
   
  ## Algunos comandos de las ramas
@@ -122,6 +122,7 @@ ____
    Si el comando anterior era "suave" este comando es mas agresivo, puesto que no te consulta ni verifica nada, elimina el archivo directamente.
  
 Ahora, una duda que pueden llegar a tener es, pongamos un ejemplo; tengo una rama login y creo una rama fix_login a partir del commit de esta, y elimino la rama login porque ya no me es necesaria, la rama fix_login que creamos a partir de login tambien se eliminaria? Veamoslo graficamente.
+
   ![ejemplo_delete_branch](images-readme/ejemplo_branch.png)
 
    Visto graficamente, podemos suponer que la rama fix_login se encuentra en el aire, sin ningun punto de sosten, pero el error se encuentra ahi, ya que git no funciona de esa manera, ya que la rama login no supone un punto de apoyo para fix_login. Entonces, no debemos guiarnos solamente en lo que vemos, puesto que git no se trata de un sistema que se base en suposiciones, precisa exactitud para cumplir todas las tareas que nosotros le demos, ya que tanto git como el computador, no tienen conciencia propia.
@@ -144,14 +145,16 @@ Para fusionar 2 ramas de manera "rapida" no es necesario incluir el fast forward
   ### COMANDO: git remote
   Listo, ya vimos lo que son repositorios locales y como trabajar con git, ahora, como subo mi proyecto a github? Es relativamente facil si sabes lo que haces xD, antes de hacer cualquier cosa, debes tener un lugar en github al que puedas mover o pasar tu repositorio local (algo obvio no? xD) Para esto crearemos un repositorio en github, dependiendo del proyecto que tengamos que subir, iremos dandole los parametros necesarios, podemos usar el siguiente link https://repo.new/. que nos llevara a la siguiente ventana:
 
-  ![ejemplogithub](images-readme/ejemplogithub.png)
+  ![ejemplogithub](images-readme/ejemplogithub.png) 
+  
  Y es asi. como creamos un repo en github. :D
 Ahora, teniendo ya un repositorio remoto en github, fusionaremos nuestro repositorio local con el remoto que acabamos de crear, y para esto usaremos el comando: 
 - <span style="color:blue">git remote add origin SSH direction
 - 
   La direccion SSH, se obtiene directamente del repositorio remoto, al presionar en code 
 
-![githubexample](images-readme/Screenshot%202024-05-11%20210232.png) para luego ir a SSH, donde podemos copiar el codigo SSH y usarlo en este comando.
+![githubexample](images-readme/Screenshot%202024-05-11%20210232.png) 
+para luego ir a SSH, donde podemos copiar el codigo SSH y usarlo en este comando.
 Nos tendria que salir algo similar a esto git@github.com:midudev/my-awesome-new-repo.git, donde todo en conjunto nos quedaria de la siguiente manera 
 - git remote add origin git@github.com:midudev/my-awesome-new-repo.git
   El origin supone un alias que es algo que veremos mas adelante.
@@ -172,6 +175,7 @@ Nos tendria que salir algo similar a esto git@github.com:midudev/my-awesome-new-
   - git push -d origin rama *Con este comando, podemos eliminar una rama que se encuentre en el repositorio remoto*
   - git push -u origin rama El -u que aplicamos, podemos verlo como:
   ![mickey](images-readme/es-una-herramienta-misteriosa-que-nos-ayudara-mas-tarde-mickey-mouse01626924881.jpg)
+
 Ya que el -u, selecciona esa rama como predeterminada para realizar todos los push y pull que hagamos
 
 - git pull rama
